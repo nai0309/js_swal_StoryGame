@@ -245,6 +245,9 @@ function finish(e) {
   if (e) {
     document.body.style.backgroundImage = "url('files/bg2.jpg')";
     mybtn.removeEventListener("click", start);
+    mybtn.addEventListener("click", function(){
+      location.reload();
+    });
     mybtn.value = "恭喜過關";
   }
 }
